@@ -1,2 +1,3 @@
-# Artemis Cloud Prometheus
+# ArtemisCloud Prometheus
 
+Expose Prometheus metrics in ArtemisCloud
