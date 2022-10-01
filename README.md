@@ -33,7 +33,29 @@ mysql-deployment-c67646cd4-qvxc2   1/1     Running   0          7s
 ```
 ### Build a custom Init Container image
 
+You need to build a new Init Container image with Dockerfile
 
+```
+docker build . -t <image-name>:<version>
+docker push <image-name>:<version>
+```
+### Deploy Artemis broker
 
-### Deploy Artemis borker
+In broker deployment file you have to add some configurations as follows:
+```
+apiVersion: broker.amq.io/v1beta1
+kind: ActiveMQArtemis
+metadata:
+  name: ex-aao
+spec:
+  deploymentPlan:
+    size: 1
+    image: quay.io/artemiscloud/activemq-artemis-broker-kubernetes:1.0.1
+    initImage: minhtrqn/activemq-artemis-broker-init:1.0.8
+    enableMetricsPlugin: true
+```
+
++ `enableMetricsPlugin`: Whether or not to install the artemis metrics plugin.
++ `initImage`: The custom Init Container image you built on above.
+
 ### Get metrics
