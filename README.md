@@ -21,6 +21,19 @@ git clone https://github.com/artemiscloud/activemq-artemis-operator
 cd activemq-artemis-operator
 git checkout main
 ```
+Execute the command
+```
+make deploy
+```
+After executing the above command, you can check the operator instance in minikube
+```
+$ kubectl get pod
+NAME                               READY   STATUS    RESTARTS   AGE
+mysql-deployment-c67646cd4-qvxc2   1/1     Running   0          7s
+```
 ### Build a custom Init Container image
+
+
+
 ### Deploy Artemis borker
 ### Get metrics
