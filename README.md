@@ -33,7 +33,7 @@ mysql-deployment-c67646cd4-qvxc2   1/1     Running   0          7s
 ```
 ### Build a custom Init Container image
 
-You need to build a new Init Container image with Dockerfile
+You need to build a new Init Container image with [Dockerfile](Dockerfile)
 
 ```
 docker build . -t <image-name>:<version>
