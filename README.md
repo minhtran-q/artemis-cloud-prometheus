@@ -1,2 +1,2 @@
-# artemis-cloud-prometheus
-Expose Prometheus mectrics in ArtemicCloud.
+# Artemis Cloud Prometheus
+
