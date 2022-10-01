@@ -21,7 +21,7 @@ git clone https://github.com/artemiscloud/activemq-artemis-operator
 cd activemq-artemis-operator
 git checkout main
 ```
-Execute the command
+Execute the command to deploy the Artemis operator
 ```
 make deploy
 ```
