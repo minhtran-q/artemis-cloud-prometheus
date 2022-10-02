@@ -23,7 +23,7 @@ git checkout main
 ```
 Execute the command to deploy the Artemis operator
 ```
-make deploy
+make OPERATOR_IMAGE_REPO=quay.io/artemiscloud/activemq-artemis-operator OPERATOR_VERSION=1.0.5 deploy
 ```
 After executing the above command, you can check the operator instance in minikube
 ```
