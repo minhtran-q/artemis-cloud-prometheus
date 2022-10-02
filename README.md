@@ -59,6 +59,9 @@ _artemis-basic-deployment.yaml_
 + `enableMetricsPlugin`: Whether or not to install the artemis metrics plugin.
 + `initImage`: The custom Init Container image you built on above.
 
-
+Deploy the broker
+```
+kubectl apply -f examples/artemis-basic-deployment.yaml -n activemq-artemis-operator
+```
 
 ### Get metrics
