@@ -71,3 +71,11 @@ activemq-artemis-controller-manager-5ff459cd95-kn22m   1/1     Running   0      
 ex-aao-ss-0                                            1/1     Running   0          23m
 ```
 ### Get metrics
+Create NodePort service to test the metrics API
+```
+kubectl apply -f testing/artemis-broker-nodeport-service.yaml
+```
+Create a shortcut for fetching the minikube IP and a service's NodePort
+```
+minikube service artemis-broker-nodeport-service --url --namespace=activemq-artemis-operator
+```
