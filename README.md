@@ -11,7 +11,7 @@ Before you start, you need to set up a general environment like the ArtemisCloud
 + operator-sdk
 + Go v1.17.x
 
-_Note:_ Install Go v1.17.x instead of v1.16, as v1.16 has a reported issue.
+_Note:_ Install **Go v1.17.x** instead of **v1.16**, as **v1.16** has a reported issue.
 
 ## Get started
 ### Deploy ArtemisCloud Operator
