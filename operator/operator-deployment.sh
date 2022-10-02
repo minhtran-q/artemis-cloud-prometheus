@@ -1,4 +1,11 @@
+#!/bin/bash
 
+OPERATOR_VERSION=$1
+
+if [[ ${OPERATOR_VERSION} == "" ]]; then
+    echo "Please pass in operator version, e.g. 1.0.5"
+    exit -1
+fi
 
 ${KUBE_CLI} create -f https://raw.githubusercontent.com/artemiscloud/activemq-artemis-operator/${OPERATOR_VERSION}/deploy/crds/broker_activemqartemis_crd.yaml
 ${KUBE_CLI} create -f https://raw.githubusercontent.com/artemiscloud/activemq-artemis-operator/${OPERATOR_VERSION}/deploy/crds/broker_activemqartemisaddress_crd.yaml
