@@ -54,6 +54,7 @@ spec:
     initImage: minhtrqn/activemq-artemis-broker-init:1.0.8
     enableMetricsPlugin: true
 ```
+_artemis-basic-deployment.yaml_
 
 + `enableMetricsPlugin`: Whether or not to install the artemis metrics plugin.
 + `initImage`: The custom Init Container image you built on above.
