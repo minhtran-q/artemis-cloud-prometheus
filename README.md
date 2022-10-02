@@ -25,9 +25,6 @@ Execute the command to deploy the Artemis operator
 ```
 make OPERATOR_IMAGE_REPO=quay.io/artemiscloud/activemq-artemis-operator OPERATOR_VERSION=1.0.5 deploy
 ```
-You also execute the [operator-deployment.sh](operator/operator-deployment.sh) file to deploy the Artemis operator
-```
-```
 After executing the above command, you can check the operator instance in minikube
 ```
 $ kubectl get pod -n activemq-artemis-operator
