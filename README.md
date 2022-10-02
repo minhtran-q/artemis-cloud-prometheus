@@ -77,5 +77,7 @@ kubectl apply -f testing/artemis-broker-nodeport-service.yaml
 ```
 Create a shortcut for fetching the minikube IP and a service's NodePort
 ```
-minikube service artemis-broker-nodeport-service --url --namespace=activemq-artemis-operator
+$ minikube service artemis-broker-nodeport-service --url --namespace=activemq-artemis-operator
+http://127.0.0.1:33685
+! Because you are using a Docker driver on linux, the terminal needs to be open to run it.
 ```
