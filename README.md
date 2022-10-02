@@ -27,7 +27,7 @@ make deploy
 ```
 After executing the above command, you can check the operator instance in minikube
 ```
-$ kubectl get pod
+$ kubectl get pod -n activemq-artemis-operator
 NAME                               READY   STATUS    RESTARTS   AGE
 mysql-deployment-c67646cd4-qvxc2   1/1     Running   0          7s
 ```
