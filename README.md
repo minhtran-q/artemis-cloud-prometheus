@@ -63,5 +63,11 @@ Deploy the broker
 ```
 kubectl apply -f examples/artemis-basic-deployment.yaml -n activemq-artemis-operator
 ```
-
+and you will get two pods in the cluster.
+```
+$ kubectl get pod
+NAME                                                   READY   STATUS    RESTARTS   AGE
+activemq-artemis-controller-manager-5ff459cd95-kn22m   1/1     Running   0          128m
+ex-aao-ss-0                                            1/1     Running   0          23m
+```
 ### Get metrics
