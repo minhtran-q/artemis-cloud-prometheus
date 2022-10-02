@@ -59,4 +59,6 @@ _artemis-basic-deployment.yaml_
 + `enableMetricsPlugin`: Whether or not to install the artemis metrics plugin.
 + `initImage`: The custom Init Container image you built on above.
 
+
+
 ### Get metrics
