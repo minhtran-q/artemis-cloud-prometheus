@@ -50,7 +50,7 @@ metadata:
 spec:
   deploymentPlan:
     size: 1
-    image: quay.io/artemiscloud/activemq-artemis-broker-kubernetes:1.0.1
+    image: quay.io/artemiscloud/activemq-artemis-broker-kubernetes:1.0.8
     initImage: minhtrqn/activemq-artemis-broker-init:1.0.8
     enableMetricsPlugin: true
 ```
