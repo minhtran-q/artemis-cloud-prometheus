@@ -81,3 +81,4 @@ $ minikube service artemis-broker-nodeport-service --url --namespace=activemq-ar
 http://127.0.0.1:33685
 ! Because you are using a Docker driver on linux, the terminal needs to be open to run it.
 ```
+Navigate to http://127.0.0.1:33685/metrics/ to get the metrics.
